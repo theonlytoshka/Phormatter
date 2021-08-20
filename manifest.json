@@ -1,0 +1,31 @@
+{
+
+  "description": "Format phone number to remove spaces, special characters and US country code",
+  "manifest_version": 2,
+  "name": "Phormatter",
+  "version": "0.0.1",
+  "homepage_url": "https://github.com/theonlytoshka/Phormatter",
+  "icons": {
+    "48": "icons/phoneold.svg"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": "icons/phoneold.svg",
+    "default_title": "Phormatter",
+    "default_popup": "popup/phormatter.html"
+  },
+
+  "options_ui": {
+    "page": "options/options.html"
+  },
+
+  "permissions": [
+    "notifications",
+    "storage"
+  ]
+}
